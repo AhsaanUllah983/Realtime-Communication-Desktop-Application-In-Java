@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="37.0" layoutY="84.0" prefHeight="567.0" prefWidth="220.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="609.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="12.0" layoutY="22.0" prefHeight="32.0" prefWidth="197.0" text="User Name">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="110.0" layoutY="67.0" startX="-100.0" startY="7.62939453125E-6" />
+            <TitledPane animated="false" layoutX="10.0" layoutY="76.0" prefHeight="229.0" prefWidth="201.0" text="Online Users">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="118.0" prefWidth="158.0">
+                     <children>
+                        <ListView layoutY="-2.0" prefHeight="206.0" prefWidth="202.0" style="-fx-background-color: pink;" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="10.0" layoutY="312.0" prefHeight="229.0" prefWidth="201.0" text="Friends">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="118.0" prefWidth="158.0">
+                     <children>
+                        <ListView layoutY="-2.0" prefHeight="203.0" prefWidth="202.0" style="-fx-background-color: pink;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+         </children>
+      </Pane>
+      <TextField layoutX="228.0" layoutY="509.0" prefHeight="43.0" prefWidth="523.0" promptText="Enter Your Text" />
+      <Button layoutX="759.0" layoutY="521.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="63.0" text="Send" />
+      <VBox layoutX="233.0" layoutY="14.0" prefHeight="498.0" prefWidth="582.0">
+         <children>
+            <ListView prefHeight="501.0" prefWidth="582.0" style="-fx-background-color: light green;" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
